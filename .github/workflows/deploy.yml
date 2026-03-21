@@ -5,7 +5,7 @@ env:
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
@@ -29,4 +29,4 @@ jobs:
             
             🌐 **URL:** ${{ env.DEPLOYMENT_URL }}
             
-            This deployment was triggered by the latest push to the `main` branch.
+            This deployment was triggered by the latest push to the `master` branch.
