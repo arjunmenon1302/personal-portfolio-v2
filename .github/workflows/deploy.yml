@@ -18,15 +18,4 @@ jobs:
       - name: Build Project Artifacts
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
-        run: |
-          DEPLOYMENT_URL=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
-          echo "DEPLOYMENT_URL=$DEPLOYMENT_URL" >> $GITHUB_ENV
-      - name: Comment Deployment URL
-        uses: peter-evans/commit-comment@v3
-        with:
-          body: |
-            🚀 **Production Deployment Successful!**
-            
-            🌐 **URL:** ${{ env.DEPLOYMENT_URL }}
-            
-            This deployment was triggered by the latest push to the `master` branch.
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
