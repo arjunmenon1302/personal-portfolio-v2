@@ -2,7 +2,12 @@
 
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { PresentationControls, Environment, Float, MeshDistortMaterial } from "@react-three/drei";
+import {
+  PresentationControls,
+  Environment,
+  Float,
+  MeshDistortMaterial,
+} from "@react-three/drei";
 import * as THREE from "three";
 
 function AbstractShape() {

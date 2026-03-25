@@ -36,41 +36,54 @@ export function Contact() {
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
               Let's build <br /> something great.
             </h2>
-            <p className="text-lg mb-10 max-w-md" style={{ color: "var(--text-secondary)" }}>
-              Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            <p
+              className="text-lg mb-10 max-w-md"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              Currently open for new opportunities. Whether you have a question
+              or just want to say hi, I'll try my best to get back to you!
             </p>
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <a
-                href="mailto:hello@arjunmenon.dev"
+                href="mailto:arjun.menon2299@gmail.com"
                 className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
                 style={{ color: "var(--text-secondary)" }}
               >
-                <div className="p-3 rounded-full group-hover:bg-indigo-500/20 group-hover:text-indigo-400 transition-colors" style={{ background: "var(--surface-subtle)" }}>
+                <div
+                  className="p-3 rounded-full group-hover:bg-indigo-500/20 group-hover:text-indigo-400 transition-colors"
+                  style={{ background: "var(--surface-subtle)" }}
+                >
                   <Mail className="w-5 h-5" />
                 </div>
                 <span>Email me</span>
               </a>
               <a
-                href="https://linkedin.com/in/arjunmenon"
+                href="https://linkedin.com/in/arjunmenon0"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
                 style={{ color: "var(--text-secondary)" }}
               >
-                <div className="p-3 rounded-full group-hover:bg-[#0077b5]/20 group-hover:text-[#0077b5] transition-colors" style={{ background: "var(--surface-subtle)" }}>
+                <div
+                  className="p-3 rounded-full group-hover:bg-[#0077b5]/20 group-hover:text-[#0077b5] transition-colors"
+                  style={{ background: "var(--surface-subtle)" }}
+                >
                   <Linkedin className="w-5 h-5" />
                 </div>
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://github.com/arjunmenon"
+                href="https://github.com/arjunmenon1302"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
                 style={{ color: "var(--text-secondary)" }}
               >
-                <div className="p-3 rounded-full group-hover:bg-black/10 transition-colors" style={{ background: "var(--surface-subtle)" }}>
+                <div
+                  className="p-3 rounded-full group-hover:bg-black/10 transition-colors"
+                  style={{ background: "var(--surface-subtle)" }}
+                >
                   <Github className="w-5 h-5" />
                 </div>
                 <span>GitHub</span>
@@ -87,10 +100,17 @@ export function Contact() {
         >
           <div className="glass p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            
-            <form onSubmit={handleSubmit} className="relative z-10 flex flex-col gap-6">
+
+            <form
+              onSubmit={handleSubmit}
+              className="relative z-10 flex flex-col gap-6"
+            >
               <div className="flex flex-col gap-2">
-                <label htmlFor="name" className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
+                <label
+                  htmlFor="name"
+                  className="text-sm font-medium"
+                  style={{ color: "var(--text-secondary)" }}
+                >
                   Name
                 </label>
                 <input
@@ -99,12 +119,20 @@ export function Contact() {
                   type="text"
                   placeholder="John Doe"
                   className="w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
-                  style={{ background: "var(--input-bg)", border: "1px solid var(--surface-border)", color: "var(--text-primary)" }}
+                  style={{
+                    background: "var(--input-bg)",
+                    border: "1px solid var(--surface-border)",
+                    color: "var(--text-primary)",
+                  }}
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="email" className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
+                <label
+                  htmlFor="email"
+                  className="text-sm font-medium"
+                  style={{ color: "var(--text-secondary)" }}
+                >
                   Email
                 </label>
                 <input
@@ -113,21 +141,33 @@ export function Contact() {
                   type="email"
                   placeholder="john@example.com"
                   className="w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
-                  style={{ background: "var(--input-bg)", border: "1px solid var(--surface-border)", color: "var(--text-primary)" }}
+                  style={{
+                    background: "var(--input-bg)",
+                    border: "1px solid var(--surface-border)",
+                    color: "var(--text-primary)",
+                  }}
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
+                <label
+                  htmlFor="message"
+                  className="text-sm font-medium"
+                  style={{ color: "var(--text-secondary)" }}
+                >
                   Message
                 </label>
                 <textarea
                   id="message"
                   required
                   rows={5}
-                  placeholder="Hello Arjun, I'd like to discuss..."
+                  placeholder="Hello AJ, I'd like to discuss..."
                   className="w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all resize-none"
-                  style={{ background: "var(--input-bg)", border: "1px solid var(--surface-border)", color: "var(--text-primary)" }}
+                  style={{
+                    background: "var(--input-bg)",
+                    border: "1px solid var(--surface-border)",
+                    color: "var(--text-primary)",
+                  }}
                 />
               </div>
 
@@ -137,7 +177,7 @@ export function Contact() {
                 className="group/btn relative w-full flex items-center justify-center gap-2 bg-white text-black font-semibold py-4 rounded-xl mt-2 overflow-hidden hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-70 disabled:hover:scale-100"
               >
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 opacity-0 group-hover/btn:opacity-10 transition-opacity" />
-                
+
                 {loading ? (
                   <span className="animate-pulse">Sending...</span>
                 ) : success ? (
@@ -153,11 +193,16 @@ export function Contact() {
           </div>
         </motion.div>
       </div>
-      
+
       {/* Footer */}
-      <footer className="absolute bottom-6 w-full text-center text-sm pointer-events-none" style={{ color: "var(--text-tertiary)" }}>
+      <footer
+        className="absolute bottom-6 w-full text-center text-sm pointer-events-none"
+        style={{ color: "var(--text-tertiary)" }}
+      >
         <p>© {new Date().getFullYear()} Arjun Menon. All rights reserved.</p>
-        <p className="mt-1 font-mono text-xs opacity-50">Built with Next.js & Tailwind</p>
+        <p className="mt-1 font-mono text-xs opacity-50">
+          Built with Next.js & Tailwind
+        </p>
       </footer>
     </section>
   );

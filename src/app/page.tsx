@@ -12,11 +12,19 @@ export default function Home() {
       <Navbar />
       <main className="flex min-h-screen flex-col overflow-x-hidden">
         <Hero />
-        <section id="about"><About /></section>
-        <section id="experience"><Experience /></section>
-        <section id="projects"><Projects /></section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
         <TechStack />
-        <section id="contact"><Contact /></section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
     </>
   );

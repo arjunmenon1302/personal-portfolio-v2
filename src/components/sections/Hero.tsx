@@ -22,19 +22,19 @@ export function Hero() {
           rotateX: 0,
           stagger: 0.05,
           duration: 1.2,
-        }
+        },
       ).fromTo(
         subtextRef.current,
         { opacity: 0, y: 20 },
         { opacity: 1, y: 0, duration: 1 },
-        "-=0.5"
+        "-=0.5",
       );
     }, containerRef);
 
     return () => ctx.revert();
   }, []);
 
-  const name = "Arjun Menon";
+  const name = "AJ Menon";
 
   return (
     <section
@@ -65,15 +65,21 @@ export function Hero() {
           className="mt-4 sm:mt-6 text-lg sm:text-2xl max-w-2xl"
           style={{ color: "var(--text-secondary)" }}
         >
-          Full-Stack Software Engineer
+          Software & DevOps Engineer
           <br className="hidden sm:block" />
-          <span className="text-sm sm:text-lg block sm:inline mt-1 sm:mt-0" style={{ color: "var(--text-tertiary)" }}>
-            Brisbane, AU • C# • Next.js • AWS
+          <span
+            className="text-sm sm:text-lg block sm:inline mt-1 sm:mt-0"
+            style={{ color: "var(--text-tertiary)" }}
+          >
+            Brisbane, AU • TypeScript • .NET • AWS
           </span>
         </p>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce" style={{ color: "var(--text-tertiary)" }}>
+      <div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce"
+        style={{ color: "var(--text-tertiary)" }}
+      >
         ↓ Scroll
       </div>
     </section>

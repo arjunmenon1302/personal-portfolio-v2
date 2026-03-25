@@ -1,18 +1,18 @@
-# Arjun Menon — Portfolio v2
+# AJ Menon — Portfolio v2
 
-Personal portfolio for Arjun Menon, Full-Stack SWE based in Brisbane, AU. Features a dark cyber-glassmorphism aesthetic with 3D elements, scroll animations, and light/dark mode.
+Personal portfolio for AJ Menon, Full-Stack SWE based in Brisbane, AU. Features a dark cyber-glassmorphism aesthetic with 3D elements, scroll animations, and light/dark mode.
 
 ## Stack
 
-| Category | Technology |
-| --- | --- |
-| Framework | Next.js 16 (App Router) |
-| Language | TypeScript |
-| Styling | Tailwind CSS v4, shadcn/ui |
-| Animation | Framer Motion, GSAP |
-| 3D | Three.js, React Three Fiber |
+| Category      | Technology                   |
+| ------------- | ---------------------------- |
+| Framework     | Next.js 16 (App Router)      |
+| Language      | TypeScript                   |
+| Styling       | Tailwind CSS v4, shadcn/ui   |
+| Animation     | Framer Motion, GSAP          |
+| 3D            | Three.js, React Three Fiber  |
 | Forms & Email | React Hook Form, Zod, Resend |
-| Deployment | Vercel |
+| Deployment    | Vercel                       |
 
 ## Getting Started
 

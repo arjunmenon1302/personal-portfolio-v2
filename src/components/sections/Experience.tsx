@@ -10,25 +10,32 @@ if (typeof window !== "undefined") {
 
 const experiences = [
   {
-    role: "Full-Stack Software Engineer",
-    company: "Current Company",
-    date: "2021 - Present",
-    desc: "Architected microservices in C# and .NET. Designed and built frontends using React and Next.js. Integrated Stripe and Klarna payment systems processing millions in transactions.",
-    tech: ["C#", ".NET", "Next.js", "AWS", "Stripe"],
+    role: "Senior Software Engineer",
+    company: "PeopleBench",
+    date: "Dec 2025 – Present",
+    desc: "Working within a data-driven product focused on workforce resilience and culture tracking. Building ML-powered NLP pipelines that transform raw survey data into actionable BI insights, while helping replatform the product with AI-automated workflows for data gathering and analysis.",
+    tech: ["Python", "TypeScript", "React", "ML / NLP"],
   },
   {
-    role: "Backend Engineer",
-    company: "Tech Startup",
-    date: "2019 - 2021",
-    desc: "Managed robust RESTful APIs with Node.js and TypeScript. Orchestrated deployments via Docker and AWS ECS.",
-    tech: ["Node.js", "TypeScript", "Docker", "PostgreSQL"],
+    role: "Software & Cloud Engineer",
+    company: "WorkingMouse",
+    date: "Dec 2023 – Nov 2025",
+    desc: "Embedded DevOps engineer within an agile product delivery team. Led the migration of a legacy reporting system to a modern .NET/React stack, cutting access times by 80%. Optimised AWS infrastructure with Terraform and Prometheus, contributing to a 30% reduction in deployment times.",
+    tech: ["C#", ".NET", "TypeScript", "React", "AWS", "Terraform"],
   },
   {
-    role: "Junior Web Developer",
-    company: "Digital Agency",
-    date: "2018 - 2019",
-    desc: "Built performant UI components and integrated diverse CMS backends. Improved loading speeds and web vitals by 40%.",
-    tech: ["JavaScript", "React", "CSS", "Firebase"],
+    role: "Software Engineer",
+    company: "Labrys",
+    date: "Jun 2021 – Dec 2023",
+    desc: "Built full-stack web and mobile applications across the Web3 ecosystem. Deployed an NFT airdrop claiming system for a prominent US e-sports team with 500+ successful claims on launch. Crafted EVM-compatible Solidity smart contracts achieving 100% audit conformity.",
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Solidity",
+      "React Native",
+    ],
   },
 ];
 
@@ -51,7 +58,7 @@ export function Experience() {
       tl.fromTo(
         lineRef.current,
         { scaleY: 0 },
-        { scaleY: 1, ease: "none", transformOrigin: "top center" }
+        { scaleY: 1, ease: "none", transformOrigin: "top center" },
       );
 
       const isMobile = window.innerWidth < 640;
@@ -69,7 +76,7 @@ export function Experience() {
               start: "top 80%",
               toggleActions: "play none none reverse",
             },
-          }
+          },
         );
       });
     }, containerRef);
@@ -106,7 +113,10 @@ export function Experience() {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-[20px] sm:left-1/2 top-6 w-4 h-4 rounded-full border-2 border-indigo-500 sm:-translate-x-1/2 transform shadow-[0_0_15px_rgba(79,70,229,0.8)] z-10" style={{ background: "var(--dot-bg)" }} />
+                <div
+                  className="absolute left-[20px] sm:left-1/2 top-6 w-4 h-4 rounded-full border-2 border-indigo-500 sm:-translate-x-1/2 transform shadow-[0_0_15px_rgba(79,70,229,0.8)] z-10"
+                  style={{ background: "var(--dot-bg)" }}
+                />
 
                 {/* Empty Space for Grid Alignment */}
                 <div className="hidden sm:block sm:w-5/12" />
@@ -117,13 +127,22 @@ export function Experience() {
                     <div className="text-sm font-mono text-indigo-400 mb-2">
                       {exp.date}
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-semibold mb-1" style={{ color: "var(--text-primary)" }}>
+                    <h3
+                      className="text-xl sm:text-2xl font-semibold mb-1"
+                      style={{ color: "var(--text-primary)" }}
+                    >
                       {exp.role}
                     </h3>
-                    <div className="text-base sm:text-lg mb-4 font-medium" style={{ color: "var(--text-secondary)" }}>
+                    <div
+                      className="text-base sm:text-lg mb-4 font-medium"
+                      style={{ color: "var(--text-secondary)" }}
+                    >
                       {exp.company}
                     </div>
-                    <p className="mb-6 leading-relaxed" style={{ color: "var(--text-tertiary)" }}>
+                    <p
+                      className="mb-6 leading-relaxed"
+                      style={{ color: "var(--text-tertiary)" }}
+                    >
                       {exp.desc}
                     </p>
                     <div className="flex flex-wrap gap-2">
@@ -131,7 +150,11 @@ export function Experience() {
                         <span
                           key={t}
                           className="px-3 py-1 rounded-full text-xs font-mono group-hover:border-indigo-500/30 transition-colors"
-                          style={{ background: "var(--surface-subtle)", border: "1px solid var(--surface-border)", color: "var(--text-secondary)" }}
+                          style={{
+                            background: "var(--surface-subtle)",
+                            border: "1px solid var(--surface-border)",
+                            color: "var(--text-secondary)",
+                          }}
                         >
                           {t}
                         </span>
