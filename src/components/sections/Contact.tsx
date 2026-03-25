@@ -36,16 +36,17 @@ export function Contact() {
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
               Let's build <br /> something great.
             </h2>
-            <p className="text-lg text-zinc-400 mb-10 max-w-md">
+            <p className="text-lg mb-10 max-w-md" style={{ color: "var(--text-secondary)" }}>
               Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <a
                 href="mailto:hello@arjunmenon.dev"
-                className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group"
+                className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
+                style={{ color: "var(--text-secondary)" }}
               >
-                <div className="p-3 bg-white/5 rounded-full group-hover:bg-indigo-500/20 group-hover:text-indigo-400 transition-colors">
+                <div className="p-3 rounded-full group-hover:bg-indigo-500/20 group-hover:text-indigo-400 transition-colors" style={{ background: "var(--surface-subtle)" }}>
                   <Mail className="w-5 h-5" />
                 </div>
                 <span>Email me</span>
@@ -54,9 +55,10 @@ export function Contact() {
                 href="https://linkedin.com/in/arjunmenon"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group"
+                className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
+                style={{ color: "var(--text-secondary)" }}
               >
-                <div className="p-3 bg-white/5 rounded-full group-hover:bg-[#0077b5]/20 group-hover:text-[#0077b5] transition-colors">
+                <div className="p-3 rounded-full group-hover:bg-[#0077b5]/20 group-hover:text-[#0077b5] transition-colors" style={{ background: "var(--surface-subtle)" }}>
                   <Linkedin className="w-5 h-5" />
                 </div>
                 <span>LinkedIn</span>
@@ -65,9 +67,10 @@ export function Contact() {
                 href="https://github.com/arjunmenon"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group"
+                className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
+                style={{ color: "var(--text-secondary)" }}
               >
-                <div className="p-3 bg-white/5 rounded-full group-hover:bg-white/20 transition-colors">
+                <div className="p-3 rounded-full group-hover:bg-black/10 transition-colors" style={{ background: "var(--surface-subtle)" }}>
                   <Github className="w-5 h-5" />
                 </div>
                 <span>GitHub</span>
@@ -87,7 +90,7 @@ export function Contact() {
             
             <form onSubmit={handleSubmit} className="relative z-10 flex flex-col gap-6">
               <div className="flex flex-col gap-2">
-                <label htmlFor="name" className="text-sm font-medium text-zinc-400">
+                <label htmlFor="name" className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
                   Name
                 </label>
                 <input
@@ -95,12 +98,13 @@ export function Contact() {
                   required
                   type="text"
                   placeholder="John Doe"
-                  className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
+                  className="w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
+                  style={{ background: "var(--input-bg)", border: "1px solid var(--surface-border)", color: "var(--text-primary)" }}
                 />
               </div>
-              
+
               <div className="flex flex-col gap-2">
-                <label htmlFor="email" className="text-sm font-medium text-zinc-400">
+                <label htmlFor="email" className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
                   Email
                 </label>
                 <input
@@ -108,12 +112,13 @@ export function Contact() {
                   required
                   type="email"
                   placeholder="john@example.com"
-                  className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
+                  className="w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
+                  style={{ background: "var(--input-bg)", border: "1px solid var(--surface-border)", color: "var(--text-primary)" }}
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-zinc-400">
+                <label htmlFor="message" className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
                   Message
                 </label>
                 <textarea
@@ -121,7 +126,8 @@ export function Contact() {
                   required
                   rows={5}
                   placeholder="Hello Arjun, I'd like to discuss..."
-                  className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all resize-none"
+                  className="w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all resize-none"
+                  style={{ background: "var(--input-bg)", border: "1px solid var(--surface-border)", color: "var(--text-primary)" }}
                 />
               </div>
 
@@ -149,7 +155,7 @@ export function Contact() {
       </div>
       
       {/* Footer */}
-      <footer className="absolute bottom-6 w-full text-center text-sm text-zinc-500 pointer-events-none">
+      <footer className="absolute bottom-6 w-full text-center text-sm pointer-events-none" style={{ color: "var(--text-tertiary)" }}>
         <p>© {new Date().getFullYear()} Arjun Menon. All rights reserved.</p>
         <p className="mt-1 font-mono text-xs opacity-50">Built with Next.js & Tailwind</p>
       </footer>

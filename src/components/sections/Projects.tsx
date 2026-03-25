@@ -85,20 +85,21 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       
       <div style={{ transform: "translateZ(50px)" }} className="flex flex-col h-full z-10">
         <div className="flex-1">
-          <h3 className="text-2xl font-bold text-white mb-3 tracking-tight">
+          <h3 className="text-2xl font-bold mb-3 tracking-tight" style={{ color: "var(--text-primary)" }}>
             {project.title}
           </h3>
-          <p className="text-zinc-400 mb-6 leading-relaxed">
+          <p className="mb-6 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             {project.description}
           </p>
         </div>
-        
+
         <div>
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((t: string) => (
               <span
                 key={t}
-                className="px-3 py-1 bg-white/5 rounded-full text-xs font-mono text-zinc-300 border border-white/10"
+                className="px-3 py-1 rounded-full text-xs font-mono"
+                style={{ background: "var(--surface-subtle)", border: "1px solid var(--surface-border)", color: "var(--text-secondary)" }}
               >
                 {t}
               </span>
@@ -110,7 +111,8 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-white hover:text-indigo-400 transition-colors"
+              className="flex items-center gap-2 text-sm font-medium hover:text-indigo-400 transition-colors"
+              style={{ color: "var(--text-primary)" }}
             >
               <ExternalLink className="w-4 h-4" /> Live Demo
             </a>
@@ -118,7 +120,8 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-sm font-medium hover:text-indigo-400 transition-colors"
+              style={{ color: "var(--text-secondary)" }}
             >
               <Github className="w-4 h-4" /> Source Code
             </a>
@@ -137,7 +140,7 @@ export function Projects() {
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
             Selected Work
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl">
+          <p className="text-lg max-w-2xl" style={{ color: "var(--text-secondary)" }}>
             A collection of robust backend architectures, integrations, and cloud deployments I've architected and built.
           </p>
         </div>
