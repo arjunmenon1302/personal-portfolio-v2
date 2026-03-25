@@ -131,9 +131,9 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
 export function Projects() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center py-24 px-4 sm:px-12 lg:px-24">
+    <section className="relative flex min-h-screen w-full flex-col items-center py-16 sm:py-24 px-4 sm:px-12 lg:px-24">
       <div className="z-10 w-full max-w-6xl">
-        <div className="mb-20 text-center sm:text-left">
+        <div className="mb-10 sm:mb-20 text-center sm:text-left">
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
             Selected Work
           </h2>
@@ -143,11 +143,11 @@ export function Projects() {
         </div>
 
         <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 perspective-[2000px]"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 perspective-[2000px]"
           style={{ perspective: "2000px" }}
         >
           {projects.map((project, i) => (
-            <div key={i} className="h-[400px]">
+            <div key={i} className="min-h-[320px] sm:h-[400px]">
               <ProjectCard project={project} index={i} />
             </div>
           ))}

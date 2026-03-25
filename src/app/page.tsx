@@ -7,7 +7,7 @@ import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden">
+    <main className="flex min-h-screen flex-col overflow-x-hidden">
       <Hero />
       <About />
       <Experience />

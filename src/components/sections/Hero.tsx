@@ -46,7 +46,7 @@ export function Hero() {
       <div className="z-10 flex flex-col items-center text-center px-4 mix-blend-difference pointer-events-none">
         <h1
           ref={textRef}
-          className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter text-white"
+          className="text-5xl sm:text-8xl md:text-9xl font-bold tracking-tighter text-white"
           style={{ perspective: "1000px" }}
         >
           {name.split("").map((char, i) => (
@@ -62,11 +62,11 @@ export function Hero() {
 
         <p
           ref={subtextRef}
-          className="mt-6 text-xl sm:text-2xl text-zinc-300 max-w-2xl"
+          className="mt-4 sm:mt-6 text-lg sm:text-2xl text-zinc-300 max-w-2xl"
         >
           Full-Stack Software Engineer
           <br className="hidden sm:block" />
-          <span className="text-zinc-500 text-base sm:text-lg">
+          <span className="text-zinc-500 text-sm sm:text-lg block sm:inline mt-1 sm:mt-0">
             Brisbane, AU • C# • Next.js • AWS
           </span>
         </p>
