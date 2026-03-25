@@ -10,25 +10,25 @@ if (typeof window !== "undefined") {
 
 const experiences = [
   {
-    role: "Full-Stack Software Engineer",
-    company: "Current Company",
-    date: "2021 - Present",
-    desc: "Architected microservices in C# and .NET. Designed and built frontends using React and Next.js. Integrated Stripe and Klarna payment systems processing millions in transactions.",
-    tech: ["C#", ".NET", "Next.js", "AWS", "Stripe"],
+    role: "Senior Software Engineer",
+    company: "PeopleBench",
+    date: "Dec 2025 – Present",
+    desc: "Working within a data-driven product focused on workforce resilience and culture tracking. Building ML-powered NLP pipelines that transform raw survey data into actionable BI insights, while helping replatform the product with AI-automated workflows for data gathering and analysis.",
+    tech: ["Python", "TypeScript", "React", "ML / NLP"],
   },
   {
-    role: "Backend Engineer",
-    company: "Tech Startup",
-    date: "2019 - 2021",
-    desc: "Managed robust RESTful APIs with Node.js and TypeScript. Orchestrated deployments via Docker and AWS ECS.",
-    tech: ["Node.js", "TypeScript", "Docker", "PostgreSQL"],
+    role: "Software & Cloud Engineer",
+    company: "WorkingMouse",
+    date: "Dec 2023 – Nov 2025",
+    desc: "Embedded DevOps engineer within an agile product delivery team. Led the migration of a legacy reporting system to a modern .NET/React stack, cutting access times by 80%. Optimised AWS infrastructure with Terraform and Prometheus, contributing to a 30% reduction in deployment times.",
+    tech: ["C#", ".NET", "TypeScript", "React", "AWS", "Terraform"],
   },
   {
-    role: "Junior Web Developer",
-    company: "Digital Agency",
-    date: "2018 - 2019",
-    desc: "Built performant UI components and integrated diverse CMS backends. Improved loading speeds and web vitals by 40%.",
-    tech: ["JavaScript", "React", "CSS", "Firebase"],
+    role: "Software Engineer",
+    company: "Labrys",
+    date: "Jun 2021 – Dec 2023",
+    desc: "Built full-stack web and mobile applications across the Web3 ecosystem. Deployed an NFT airdrop claiming system for a prominent US e-sports team with 500+ successful claims on launch. Crafted EVM-compatible Solidity smart contracts achieving 100% audit conformity.",
+    tech: ["React", "Next.js", "TypeScript", "Node.js", "Solidity", "React Native"],
   },
 ];
 

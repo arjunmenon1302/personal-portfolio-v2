@@ -6,34 +6,34 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Global Payments API",
-    description: "A unified C# microservice integrating Stripe and Klarna for multi-region checkout flows. Processed $2M+ in daily volume with 99.99% uptime.",
+    title: "Workforce Intelligence Platform",
+    description: "End-to-end data pipeline transforming raw survey responses into actionable BI insights using ML-powered NLP models. Built with AI-automated workflows for data collection, analysis, and visualisation at scale.",
     image: "/api-arch.png",
-    tech: ["C#", ".NET Core", "Stripe API", "AWS Redis"],
+    tech: ["Python", "ML / NLP", "TypeScript", "React"],
     link: "#",
     github: "#",
   },
   {
-    title: "Real-time Order Tracking",
-    description: "Event-driven architecture using Kafka and Node.js to stream live order statuses to a React dashboard. Sub-second latency at scale.",
+    title: "Legacy Reporting Migration",
+    description: "Architected the full migration of a legacy reporting system to a modern .NET and React stack. Delivered measurable outcomes — access speeds improved by 80% and reporting was opened to a significantly wider user base.",
     image: "/tracking.png",
-    tech: ["TypeScript", "Kafka", "Node.js", "WebSockets"],
+    tech: ["C#", ".NET", "React", "TypeScript", "AWS"],
     link: "#",
     github: "#",
   },
   {
-    title: "Cloud Infrastructure CI/CD",
-    description: "Automated AWS provisioning using Terraform and GitHub Actions. Reduced deployment times from 45 mins to under 3 mins.",
+    title: "NFT Airdrop Claiming System",
+    description: "On-chain NFT airdrop infrastructure for a prominent US e-sports team. Engineered the end-to-end claiming mechanism with over 500 successful token distributions on launch.",
     image: "/cicd.png",
-    tech: ["AWS", "Docker", "Terraform", "GitHub Actions"],
+    tech: ["Solidity", "TypeScript", "Next.js", "Node.js"],
     link: "#",
     github: "#",
   },
   {
-    title: "Identity & Access Provider",
-    description: "OAuth2 compliant authentication service built with Next.js App Router and PostgreSQL. Features role-based access control and MFA.",
+    title: "On-Chain Contract Platform",
+    description: "A Web3 contract management application built for the Ethereum ecosystem. Featuring EVM-compatible smart contracts crafted in Solidity that achieved 100% audit conformity.",
     image: "/auth.png",
-    tech: ["Next.js", "PostgreSQL", "Prisma", "JWT"],
+    tech: ["Solidity", "Next.js", "Node.js", "Ethereum"],
     link: "#",
     github: "#",
   },
@@ -141,7 +141,7 @@ export function Projects() {
             Selected Work
           </h2>
           <p className="text-lg max-w-2xl" style={{ color: "var(--text-secondary)" }}>
-            A collection of robust backend architectures, integrations, and cloud deployments I've architected and built.
+            A selection of real-world systems I've designed and built — spanning data engineering, cloud infrastructure, and Web3.
           </p>
         </div>
 

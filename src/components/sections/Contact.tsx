@@ -42,7 +42,7 @@ export function Contact() {
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <a
-                href="mailto:hello@arjunmenon.dev"
+                href="mailto:arjun.menon2299@gmail.com"
                 className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"
                 style={{ color: "var(--text-secondary)" }}
               >
@@ -52,7 +52,7 @@ export function Contact() {
                 <span>Email me</span>
               </a>
               <a
-                href="https://linkedin.com/in/arjunmenon"
+                href="https://linkedin.com/in/arjunmenon0"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-indigo-400 transition-colors group"

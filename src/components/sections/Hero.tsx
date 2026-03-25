@@ -65,10 +65,10 @@ export function Hero() {
           className="mt-4 sm:mt-6 text-lg sm:text-2xl max-w-2xl"
           style={{ color: "var(--text-secondary)" }}
         >
-          Full-Stack Software Engineer
+          Software & DevOps Engineer
           <br className="hidden sm:block" />
           <span className="text-sm sm:text-lg block sm:inline mt-1 sm:mt-0" style={{ color: "var(--text-tertiary)" }}>
-            Brisbane, AU • C# • Next.js • AWS
+            Brisbane, AU • TypeScript • .NET • AWS
           </span>
         </p>
       </div>

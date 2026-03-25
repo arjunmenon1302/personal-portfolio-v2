@@ -5,26 +5,26 @@ import { Server, Database, Code2, Cloud } from "lucide-react";
 
 const bentoItems = [
   {
-    title: "Backend Engineering",
-    description: "C#, .NET, Node.js, and microservices architecture.",
-    icon: <Server className="h-6 w-6 text-color-glow-indigo" />,
+    title: "Full-Stack Development",
+    description: "TypeScript, React, Next.js, C# and .NET — from pixel-perfect interfaces to well-architected APIs.",
+    icon: <Code2 className="h-6 w-6 text-color-glow-cyan" />,
     className: "md:col-span-2 md:row-span-1",
   },
   {
-    title: "Frontend Development",
-    description: "TypeScript, React, Next.js, and complex state management.",
-    icon: <Code2 className="h-6 w-6 text-color-glow-cyan" />,
+    title: "Cloud & DevOps",
+    description: "AWS (EC2, EKS, Fargate, CloudFront), Terraform, and GitHub Actions for infrastructure that scales.",
+    icon: <Cloud className="h-6 w-6 text-color-glow-purple" />,
     className: "md:col-span-1 md:row-span-1",
   },
   {
-    title: "Cloud & Infrastructure",
-    description: "AWS (EC2, S3, Lambda), Docker, and CI/CD pipelines.",
-    icon: <Cloud className="h-6 w-6 text-color-glow-purple" />,
+    title: "Platform Engineering",
+    description: "CI/CD pipelines, observability with Prometheus and DataDog, and deployment automation that ships with confidence.",
+    icon: <Server className="h-6 w-6 text-color-glow-indigo" />,
     className: "md:col-span-1 md:row-span-2",
   },
   {
-    title: "Data & Integrations",
-    description: "PostgreSQL, Stripe, Klarna, REST, GraphQL.",
+    title: "Data & AI Pipelines",
+    description: "End-to-end pipelines from raw data to ML-powered NLP models and BI visualisations.",
     icon: <Database className="h-6 w-6 text-emerald-400" />,
     className: "md:col-span-2 md:row-span-1",
   },
@@ -44,11 +44,11 @@ export function About() {
           className="mb-8 sm:mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Building robust systems <br className="hidden sm:block" />
-            <span style={{ color: "var(--text-tertiary)" }}>at scale.</span>
+            Where product meets <br className="hidden sm:block" />
+            <span style={{ color: "var(--text-tertiary)" }}>platform.</span>
           </h2>
           <p className="text-lg max-w-2xl" style={{ color: "var(--text-secondary)" }}>
-            I'm a Full-Stack Software Engineer specializing in backend architecture, cloud infrastructure, and modern frontend frameworks. I build secure, high-performance applications from database to user interface.
+            I'm a software and DevOps engineer who thrives at the intersection of product and platform. With experience spanning full-stack development, cloud architecture, and data engineering, I translate complex requirements into systems that are resilient, scalable, and built for real-world impact.
           </p>
         </motion.div>
 
