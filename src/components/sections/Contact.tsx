@@ -19,13 +19,13 @@ export function Contact() {
   };
 
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-24 px-4 sm:px-12 lg:px-24">
+    <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-16 sm:py-24 px-4 sm:px-12 lg:px-24">
       {/* Background radial gradient */}
       <div className="absolute inset-0 flex items-center justify-center -z-10">
         <div className="w-[80vw] h-[80vw] sm:w-[50vw] sm:h-[50vw] bg-indigo-500/10 blur-[150px] rounded-full" />
       </div>
 
-      <div className="z-10 w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="z-10 w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -33,14 +33,14 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl sm:text-6xl font-bold tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
               Let's build <br /> something great.
             </h2>
             <p className="text-lg text-zinc-400 mb-10 max-w-md">
               Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
 
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <a
                 href="mailto:hello@arjunmenon.dev"
                 className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group"
@@ -82,7 +82,7 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="glass p-8 sm:p-10 rounded-3xl relative overflow-hidden group">
+          <div className="glass p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
             <form onSubmit={handleSubmit} className="relative z-10 flex flex-col gap-6">

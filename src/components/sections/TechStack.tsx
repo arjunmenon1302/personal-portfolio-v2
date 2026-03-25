@@ -69,8 +69,8 @@ function IconSphere() {
 
 export function TechStack() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-24 px-4 sm:px-12 lg:px-24 overflow-hidden">
-      <div className="z-10 w-full max-w-5xl text-center mb-16">
+    <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-16 sm:py-24 px-4 sm:px-12 lg:px-24 overflow-hidden">
+      <div className="z-10 w-full max-w-5xl text-center mb-8 sm:mb-16">
         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
           Core Technologies
         </h2>
@@ -79,7 +79,7 @@ export function TechStack() {
         </p>
       </div>
 
-      <div className="relative w-full h-[500px] flex items-center justify-center">
+      <div className="relative w-full h-[300px] sm:h-[500px] flex items-center justify-center">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/20 rounded-full blur-[100px]" />
         
@@ -92,9 +92,9 @@ export function TechStack() {
         </div>
 
         {/* Floating tech icons around the canvas */}
-        <div className="absolute inset-0 z-10 pointer-events-none flex flex-wrap justify-center items-center gap-8 px-4 opacity-80 mix-blend-screen">
+        <div className="absolute inset-0 z-10 pointer-events-none flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 px-4 opacity-80 mix-blend-screen">
             {icons.map((src, i) => (
-                <img key={i} src={src} alt="tech icon" className="w-12 h-12 md:w-16 md:h-16 object-contain grayscale opacity-50 transition-all duration-500 hover:grayscale-0 hover:opacity-100 pointer-events-auto cursor-pointer hover:scale-110" />
+                <img key={i} src={src} alt="tech icon" className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 object-contain grayscale opacity-50 transition-all duration-500 hover:grayscale-0 hover:opacity-100 pointer-events-auto cursor-pointer hover:scale-110" />
             ))}
         </div>
       </div>

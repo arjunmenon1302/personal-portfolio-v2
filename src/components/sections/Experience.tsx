@@ -54,10 +54,11 @@ export function Experience() {
         { scaleY: 1, ease: "none", transformOrigin: "top center" }
       );
 
+      const isMobile = window.innerWidth < 640;
       itemsRef.current.forEach((item, i) => {
         gsap.fromTo(
           item,
-          { opacity: 0, x: i % 2 === 0 ? -50 : 50 },
+          { opacity: 0, x: isMobile ? 0 : i % 2 === 0 ? -50 : 50 },
           {
             opacity: 1,
             x: 0,
@@ -79,10 +80,10 @@ export function Experience() {
   return (
     <section
       ref={containerRef}
-      className="relative flex min-h-screen w-full flex-col items-center py-24 px-4 sm:px-12 lg:px-24"
+      className="relative flex min-h-screen w-full flex-col items-center py-16 sm:py-24 px-4 sm:px-12 lg:px-24 overflow-x-hidden"
     >
       <div className="z-10 w-full max-w-5xl">
-        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-20 text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-10 sm:mb-20 text-center">
           Experience
         </h2>
 
@@ -112,14 +113,14 @@ export function Experience() {
 
                 {/* Content Card */}
                 <div className="w-full sm:w-5/12 pl-12 sm:pl-0">
-                  <div className="glass p-8 rounded-3xl group hover:border-indigo-500/30 transition-colors duration-300">
+                  <div className="glass p-5 sm:p-8 rounded-2xl sm:rounded-3xl group hover:border-indigo-500/30 transition-colors duration-300">
                     <div className="text-sm font-mono text-indigo-400 mb-2">
                       {exp.date}
                     </div>
-                    <h3 className="text-2xl font-semibold text-white mb-1">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-white mb-1">
                       {exp.role}
                     </h3>
-                    <div className="text-lg text-zinc-400 mb-4 font-medium">
+                    <div className="text-base sm:text-lg text-zinc-400 mb-4 font-medium">
                       {exp.company}
                     </div>
                     <p className="text-zinc-500 mb-6 leading-relaxed">

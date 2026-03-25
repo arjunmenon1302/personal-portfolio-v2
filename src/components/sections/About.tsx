@@ -32,7 +32,7 @@ const bentoItems = [
 
 export function About() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-24 px-4 sm:px-12 lg:px-24">
+    <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-16 sm:py-24 px-4 sm:px-12 lg:px-24">
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
       
       <div className="z-10 w-full max-w-6xl">
@@ -41,7 +41,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-8 sm:mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Building robust systems <br className="hidden sm:block" />
@@ -52,7 +52,7 @@ export function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:auto-rows-[200px]">
           {bentoItems.map((item, i) => (
             <motion.div
               key={i}
@@ -61,17 +61,17 @@ export function About() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className={`glass rounded-3xl p-8 flex flex-col justify-between overflow-hidden group relative ${item.className}`}
+              className={`glass rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col justify-between overflow-hidden group relative ${item.className}`}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="bg-black/40 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+
+              <div className="bg-black/40 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-4 sm:mb-6">
                 {item.icon}
               </div>
-              
+
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-zinc-400 leading-relaxed text-sm sm:text-base">
+                <h3 className="text-base sm:text-xl font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-zinc-400 leading-relaxed text-sm">
                   {item.description}
                 </p>
               </div>
