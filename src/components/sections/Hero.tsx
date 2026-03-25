@@ -62,17 +62,18 @@ export function Hero() {
 
         <p
           ref={subtextRef}
-          className="mt-4 sm:mt-6 text-lg sm:text-2xl text-zinc-300 max-w-2xl"
+          className="mt-4 sm:mt-6 text-lg sm:text-2xl max-w-2xl"
+          style={{ color: "var(--text-secondary)" }}
         >
           Full-Stack Software Engineer
           <br className="hidden sm:block" />
-          <span className="text-zinc-500 text-sm sm:text-lg block sm:inline mt-1 sm:mt-0">
+          <span className="text-sm sm:text-lg block sm:inline mt-1 sm:mt-0" style={{ color: "var(--text-tertiary)" }}>
             Brisbane, AU • C# • Next.js • AWS
           </span>
         </p>
       </div>
-      
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce text-zinc-500">
+
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce" style={{ color: "var(--text-tertiary)" }}>
         ↓ Scroll
       </div>
     </section>

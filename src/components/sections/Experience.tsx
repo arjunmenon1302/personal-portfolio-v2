@@ -106,7 +106,7 @@ export function Experience() {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-[20px] sm:left-1/2 top-6 w-4 h-4 rounded-full bg-black border-2 border-indigo-500 sm:-translate-x-1/2 transform shadow-[0_0_15px_rgba(79,70,229,0.8)] z-10" />
+                <div className="absolute left-[20px] sm:left-1/2 top-6 w-4 h-4 rounded-full border-2 border-indigo-500 sm:-translate-x-1/2 transform shadow-[0_0_15px_rgba(79,70,229,0.8)] z-10" style={{ background: "var(--dot-bg)" }} />
 
                 {/* Empty Space for Grid Alignment */}
                 <div className="hidden sm:block sm:w-5/12" />
@@ -117,20 +117,21 @@ export function Experience() {
                     <div className="text-sm font-mono text-indigo-400 mb-2">
                       {exp.date}
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white mb-1">
+                    <h3 className="text-xl sm:text-2xl font-semibold mb-1" style={{ color: "var(--text-primary)" }}>
                       {exp.role}
                     </h3>
-                    <div className="text-base sm:text-lg text-zinc-400 mb-4 font-medium">
+                    <div className="text-base sm:text-lg mb-4 font-medium" style={{ color: "var(--text-secondary)" }}>
                       {exp.company}
                     </div>
-                    <p className="text-zinc-500 mb-6 leading-relaxed">
+                    <p className="mb-6 leading-relaxed" style={{ color: "var(--text-tertiary)" }}>
                       {exp.desc}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {exp.tech.map((t) => (
                         <span
                           key={t}
-                          className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-zinc-300 group-hover:border-indigo-500/30 transition-colors"
+                          className="px-3 py-1 rounded-full text-xs font-mono group-hover:border-indigo-500/30 transition-colors"
+                          style={{ background: "var(--surface-subtle)", border: "1px solid var(--surface-border)", color: "var(--text-secondary)" }}
                         >
                           {t}
                         </span>
