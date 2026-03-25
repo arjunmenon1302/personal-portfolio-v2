@@ -23,7 +23,8 @@ function IconSphere() {
   useFrame((state) => {
     if (groupRef.current) {
       groupRef.current.rotation.y = state.clock.elapsedTime * 0.1;
-      groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.2) * 0.2;
+      groupRef.current.rotation.x =
+        Math.sin(state.clock.elapsedTime * 0.2) * 0.2;
     }
   });
 
@@ -44,12 +45,12 @@ function IconSphere() {
           opacity={0.1}
         />
       </mesh>
-      
+
       {Array.from({ length: 15 }).map((_, i) => {
         const phi = Math.acos(-1 + (2 * i) / 15);
         const theta = Math.sqrt(15 * Math.PI) * phi;
         const radius = 2;
-        
+
         return (
           <mesh
             key={i}
@@ -60,7 +61,11 @@ function IconSphere() {
             ]}
           >
             <sphereGeometry args={[0.08, 16, 16]} />
-            <meshStandardMaterial color={i % 2 === 0 ? "#06B6D4" : "#9333EA"} emissive={i % 2 === 0 ? "#06B6D4" : "#9333EA"} emissiveIntensity={2} />
+            <meshStandardMaterial
+              color={i % 2 === 0 ? "#06B6D4" : "#9333EA"}
+              emissive={i % 2 === 0 ? "#06B6D4" : "#9333EA"}
+              emissiveIntensity={2}
+            />
           </mesh>
         );
       })}
@@ -75,15 +80,19 @@ export function TechStack() {
         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
           Core Technologies
         </h2>
-        <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
-          The languages, frameworks, and infrastructure tools I use daily to architect resilient platforms.
+        <p
+          className="text-lg max-w-2xl mx-auto"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          The languages, frameworks, and infrastructure tools I use daily to
+          architect resilient platforms.
         </p>
       </div>
 
       <div className="relative w-full h-[300px] sm:h-[500px] flex items-center justify-center">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/20 rounded-full blur-[100px]" />
-        
+
         <div className="absolute inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
             <ambientLight intensity={0.5} />
@@ -94,9 +103,14 @@ export function TechStack() {
 
         {/* Floating tech icons around the canvas */}
         <div className="absolute inset-0 z-10 pointer-events-none flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 px-4 opacity-80 mix-blend-screen">
-            {icons.map((src, i) => (
-                <img key={i} src={src} alt="tech icon" className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 object-contain grayscale opacity-50 transition-all duration-500 hover:grayscale-0 hover:opacity-100 pointer-events-auto cursor-pointer hover:scale-110" />
-            ))}
+          {icons.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt="tech icon"
+              className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 object-contain grayscale opacity-50 transition-all duration-500 hover:grayscale-0 hover:opacity-100 pointer-events-auto cursor-pointer hover:scale-110"
+            />
+          ))}
         </div>
       </div>
     </section>

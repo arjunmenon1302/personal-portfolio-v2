@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arjun Menon | Full-Stack SWE",
-  description: "Personal portfolio of Arjun Menon, Full-Stack Software Engineer based in Brisbane, Australia.",
+  title: "AJ Menon | Full-Stack SWE",
+  description:
+    "Personal portfolio of AJ Menon, Full-Stack Software Engineer based in Brisbane, Australia.",
 };
 
 export default function RootLayout({
@@ -25,16 +26,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
         >
-          <SmoothScrollProvider>
-            {children}
-          </SmoothScrollProvider>
+          <SmoothScrollProvider>{children}</SmoothScrollProvider>
         </ThemeProvider>
       </body>
     </html>
