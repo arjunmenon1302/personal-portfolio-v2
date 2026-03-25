@@ -33,7 +33,7 @@ const bentoItems = [
 export function About() {
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center py-16 sm:py-24 px-4 sm:px-12 lg:px-24">
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+      <div className="absolute inset-0 bg-[size:50px_50px] dark:bg-grid-white/[0.02] bg-grid-black/[0.03]" />
       
       <div className="z-10 w-full max-w-6xl">
         <motion.div
@@ -45,9 +45,9 @@ export function About() {
         >
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Building robust systems <br className="hidden sm:block" />
-            <span className="text-zinc-500">at scale.</span>
+            <span style={{ color: "var(--text-tertiary)" }}>at scale.</span>
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl">
+          <p className="text-lg max-w-2xl" style={{ color: "var(--text-secondary)" }}>
             I'm a Full-Stack Software Engineer specializing in backend architecture, cloud infrastructure, and modern frontend frameworks. I build secure, high-performance applications from database to user interface.
           </p>
         </motion.div>
@@ -65,13 +65,13 @@ export function About() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              <div className="bg-black/40 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-4 sm:mb-6">
+              <div className="rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-4 sm:mb-6" style={{ background: "var(--input-bg)" }}>
                 {item.icon}
               </div>
 
               <div>
-                <h3 className="text-base sm:text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-zinc-400 leading-relaxed text-sm">
+                <h3 className="text-base sm:text-xl font-semibold mb-2" style={{ color: "var(--text-primary)" }}>{item.title}</h3>
+                <p className="leading-relaxed text-sm" style={{ color: "var(--text-secondary)" }}>
                   {item.description}
                 </p>
               </div>

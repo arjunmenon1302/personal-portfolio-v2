@@ -74,7 +74,7 @@ export function TechStack() {
         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
           Core Technologies
         </h2>
-        <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
+        <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           The languages, frameworks, and infrastructure tools I use daily to architect resilient platforms.
         </p>
       </div>
